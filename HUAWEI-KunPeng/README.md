@@ -1,6 +1,6 @@
 # HUAWEI-KunPeng
 ## about `play-for-fun.bat`
-This is a helpful shell script to connect to my server, compete with my strategy and **return** a `replay.txt` to **you** under `"/server/replay.txt"`.
+This is a helpful shell script to run your client **locally** without upload anything! and connect to my server, compete with my strategy and **return** a `replay.txt` to **you** under `"/server/replay.txt"`.
 
 #### How to run
 1. Put this file `play-for-fun.bat` under your root directory of your kunpeng project, such as `"D:\kunpeng\"`.
