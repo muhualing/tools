@@ -11,8 +11,8 @@ set host=muhualing.ddns.net
 set port=6001
 echo connecting to: %host%
 curl %host%:3978
-rem sleep 5s waiting for server to run
-ping -n 5 127.0.0.1>null
+rem sleep 1s waiting for server to run
+ping -n 1 127.0.0.1>null
 set encryption=1
 call:encrypt %encryption% >nul
 set randomName=%random%
@@ -22,8 +22,8 @@ cd /d "client"
 start gameclient.bat 5000 %host% %port%
 popd
 echo curling remote service and waiting for server and client compete to each other
-rem sleep 60s waiting for server and client compete to each other
-ping -n 60 127.0.0.1>null
+rem sleep 90s waiting for server and client compete to each other
+ping -n 90 127.0.0.1>null
 pushd %CD%
 echo %CD%
 REM call:client %randomName% %host% %port%
